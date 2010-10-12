@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Data:</b>
+  <%= @data_group.data_id %>
+</p>
+
+<p>
+  <b>Data type:</b>
+  <%= @data_group.data_type %>
+</p>
+
+<p>
+  <b>Group:</b>
+  <%= @data_group.group_id %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%= @data_group.order %>
+</p>
+
+
+<%= link_to 'Edit', edit_data_group_path(@data_group) %> |
+<%= link_to 'Back', data_groups_path %>

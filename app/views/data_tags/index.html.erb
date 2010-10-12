@@ -1,0 +1,27 @@
+<h1>Listing data_tags</h1>
+
+<table>
+  <tr>
+    <th>Data</th>
+    <th>Data type</th>
+    <th>Tag</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @data_tags.each do |data_tag| %>
+  <tr>
+    <td><%= data_tag.data_id %></td>
+    <td><%= data_tag.data_type %></td>
+    <td><%= data_tag.tag_id %></td>
+    <td><%= link_to 'Show', data_tag %></td>
+    <td><%= link_to 'Edit', edit_data_tag_path(data_tag) %></td>
+    <td><%= link_to 'Destroy', data_tag, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Data tag', new_data_tag_path %>

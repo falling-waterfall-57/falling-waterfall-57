@@ -1,0 +1,2 @@
+module ViewsEmailsHelper
+end

@@ -1,0 +1,29 @@
+<h1>Listing data_groups</h1>
+
+<table>
+  <tr>
+    <th>Data</th>
+    <th>Data type</th>
+    <th>Group</th>
+    <th>Order</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @data_groups.each do |data_group| %>
+  <tr>
+    <td><%= data_group.data_id %></td>
+    <td><%= data_group.data_type %></td>
+    <td><%= data_group.group_id %></td>
+    <td><%= data_group.order %></td>
+    <td><%= link_to 'Show', data_group %></td>
+    <td><%= link_to 'Edit', edit_data_group_path(data_group) %></td>
+    <td><%= link_to 'Destroy', data_group, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Data group', new_data_group_path %>

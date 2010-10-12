@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Data:</b>
+  <%= @data_tag.data_id %>
+</p>
+
+<p>
+  <b>Data type:</b>
+  <%= @data_tag.data_type %>
+</p>
+
+<p>
+  <b>Tag:</b>
+  <%= @data_tag.tag_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_data_tag_path(@data_tag) %> |
+<%= link_to 'Back', data_tags_path %>

@@ -1,0 +1,33 @@
+<h1>Listing containers</h1>
+
+<table>
+  <tr>
+    <th>View</th>
+    <th>Group</th>
+    <th>Position x</th>
+    <th>Position y</th>
+    <th>Size x</th>
+    <th>Size y</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @containers.each do |container| %>
+  <tr>
+    <td><%= container.view_id %></td>
+    <td><%= container.group_id %></td>
+    <td><%= container.position_x %></td>
+    <td><%= container.position_y %></td>
+    <td><%= container.size_x %></td>
+    <td><%= container.size_y %></td>
+    <td><%= link_to 'Show', container %></td>
+    <td><%= link_to 'Edit', edit_container_path(container) %></td>
+    <td><%= link_to 'Destroy', container, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Container', new_container_path %>

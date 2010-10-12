@@ -1,0 +1,23 @@
+<h1>Listing views_emails</h1>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @views_emails.each do |views_email| %>
+  <tr>
+    <td><%= views_email.email %></td>
+    <td><%= link_to 'Show', views_email %></td>
+    <td><%= link_to 'Edit', edit_views_email_path(views_email) %></td>
+    <td><%= link_to 'Destroy', views_email, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Views email', new_views_email_path %>

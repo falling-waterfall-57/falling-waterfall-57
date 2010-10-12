@@ -1,4 +1,26 @@
 Modalware::Application.routes.draw do
+  resources :comments
+
+  resources :views_emails
+
+  resources :views
+
+  resources :pieces
+
+  resources :jobs
+
+  resources :data_groups
+
+  resources :groups
+
+  resources :data_tags
+
+  resources :containers
+
+  resources :tags
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

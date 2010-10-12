@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>View:</b>
+  <%= @container.view_id %>
+</p>
+
+<p>
+  <b>Group:</b>
+  <%= @container.group_id %>
+</p>
+
+<p>
+  <b>Position x:</b>
+  <%= @container.position_x %>
+</p>
+
+<p>
+  <b>Position y:</b>
+  <%= @container.position_y %>
+</p>
+
+<p>
+  <b>Size x:</b>
+  <%= @container.size_x %>
+</p>
+
+<p>
+  <b>Size y:</b>
+  <%= @container.size_y %>
+</p>
+
+
+<%= link_to 'Edit', edit_container_path(@container) %> |
+<%= link_to 'Back', containers_path %>
