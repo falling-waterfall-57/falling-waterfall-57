@@ -16,7 +16,7 @@
 				<li>Manage viewer comments.</li>
                 <li>100 MB storage.</li>
             </ul>
-            <%= link_to "Sign up for Basic BETA", new_user_path, :class => 'offer1cta' %>
+            <%= link_to "Sign up for Basic", new_user_path, :class => 'offer1cta' %>
          </div>
          <div class="offer2">
         	<h3>Premium Folio - $<%=price%> / Month</h3>
@@ -28,5 +28,5 @@
                 <li>View visitor metrics.</li>
                 <li>2.0 GB storage.</li>
             </ul>
-    		<%= link_to "Sign up for Premium BETA", new_user_path(:premium_user => 1, :price => price), :class=>"offer2cta" %>
+    		<%= link_to "Sign up for Premium", new_user_path(:premium_user => 1, :price => price), :class=>"offer2cta" %>
          </div>
