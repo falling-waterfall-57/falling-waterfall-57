@@ -25,7 +25,15 @@ class UsersController < ApplicationController
   # GET /users/new.xml
   def new
     @user = User.new
-
+    if params.key?(:premium_user)
+      usertype = "Premium"
+      @user.premium = true
+      @user.price = params[:price]
+    else
+      usertype = "Basic"
+      @user.premium = false
+    end
+    @title = "Signup for Closed Beta #{usertype} User Account"
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @user }
@@ -41,6 +49,7 @@ class UsersController < ApplicationController
   # POST /users.xml
   def create
     @user = User.new(params[:user])
+    @user.full_name = "#{@user.first_name} #{@user.last_name}"
 
     respond_to do |format|
       if @user.save

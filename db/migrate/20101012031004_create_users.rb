@@ -8,6 +8,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :full_name
       t.string :folio_name
       t.text :about_me
+      t.boolean :premium
+      t.integer :price
 
       t.timestamps
     end

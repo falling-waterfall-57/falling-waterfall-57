@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>FolioConnect. Target your portfolio.</title>
+</head>
+
+<style>
+
+body {margin:0px;padding:20px;font-family:Arial, Helvetica, sans-serif;font-size:15px;background-color:#444;}
+h2 {text-align:center;margin:6px 0px;padding:18px 0px 0px 0px;font-size:20px;font-weight:normal;}
+h3 {display:block;float:left;margin:0px;padding:0px;font-size:18px;}
+p {clear:both;}
+a {color:#336699;}
+a:hover {text-decoration:none;}
+
+.features {margin:0px auto 20px auto;padding:1px 0px 0px 42px;height:102px;width:400px;background:top left repeat-y url(check.gif);font-size:16px;line-height:18px;}
+
+.offer1 {float:left;margin:0px 20px 0px 50px;padding:0px;width:254px;background-color:#f2f4f8;}
+.offer1 h3 {margin:0px;padding:3px 12px;width:230px;background-color:#7193b6;color:#fff;font-weight:normal;}
+.offer1 ul {clear:both;display:block;float:left;margin:0px;padding:10px 10px 10px 24px;width:220px;}
+.offer1 ul li {margin:0px;padding:4px 0px;}
+.offer1cta {display:block;float:left;margin:6px 0px 10px 80px;padding:3px 0px;height:17px;width:160px;background-color:#adcb6b;color:#fff;font-size:14px;text-decoration:none;text-align:center;border:2px solid #f2f4f8;}
+.offer1cta:hover {border:2px solid #444;}
+
+
+.offer2 {float:left;margin:0px 20px 0px 0px;padding:0px;width:360px;background-color:#f2f4f8;}
+.offer2 h3 {margin:0px;padding:3px 12px;width:336px;background-color:#b671b2;color:#fff;font-weight:normal;}
+.offer2 ul {clear:left;display:block;float:left;margin:0px;padding:10px 10px 10px 24px;width:326px;}
+.offer2 ul li {margin:0px;padding:4px 0px;}
+.offer2cta {display:block;float:left;margin:6px 0px 10px 186px;padding:3px 0px;height:17px;width:160px;background-color:#adcb6b;color:#fff;font-size:14px;text-decoration:none;text-align:center;border:2px solid #f2f4f8;}
+.offer2cta:hover {border:2px solid #444;}
+
+img.right {float:right;padding-left:10px;border:0px;border:0px;}
+.main {margin:0px auto;padding:22px 20px;width:740px;border:2px solid #000;background-color:#fff;}
+.nav {float:none;margin:0px;padding:0px;height:22px;width:740px;background-color:#fff;border-bottom:2px solid #444;}
+.navTab {display:block;float:right;padding:3px 0px;height:16px;width:99px;background-color:#444;color:#fff;font-size:14px;text-decoration:none;text-align:center;}
+.navTab:hover {background-color:#adcb6b;}
+.cta {clear:both;display:block;margin:0px auto 24px auto;padding:3px 0px;height:18px;width:150px;clear:both;background-color:#444;text-align:center;text-decoration:none;color:#fff;}
+.cta:hover {background-color:#adcb6b;}
+.footer {margin:0px auto;padding:3px 0px;width:780px;color:#ccc;font-size:12px;text-align:right;}
+
+
+
+
+</style>
+
+
+
+<body>
+
+<div class="main">
+	<a href="#"><img class="right" src="/images/icon_facebook.png" height="40" width="40" title="Become a fan" /></a>
+    <a href="#"><img class="right" src="/images/icon_twitter.png" title="Follow us on twitter." height="40" width="40" /></a>
+    <img src="/images/folioconnect.gif" height="99" width="267" alt="FolioConnect" /><br />
+    <img src="/images/targetyourportfolio.gif" height="30" width="267" alt="target your portfolio." />
+    <div class="nav">
+    	<a href="#" class="navTab">About Us</a>
+    </div>
+    <h2>Manage custom views of your online portfolio... <strong>all in one place</strong>.</h2>
+    	<div class="features">
+        	<p>Quick setup, Import data from LinkedIn.</p>
+			<p>Upload audio, video, images, code and <a href="#">other file types</a>.</p>
+			<p>Gorgeous presentation templates.</p>
+        </div>
+        <a class="cta" href="#">Watch the DEMO!</a>
+    	<div class="offer1">
+        	<h3>Basic Folio - FREE!</h3>
+            <ul>
+				<li>1 Custom View, change anytime.</li>
+				<li>Manage viewer comments.</li>
+                <li>100 MB storage.</li>
+            </ul>
+    		<a href="#" class="offer1cta">Sign up for Basic</a>
+         </div>
+         <div class="offer2">
+        	<h3>Premium Folio - $6 / Month</h3>
+            <ul>
+				<li>10 Custom Views, change anytime.</li>
+				<li>Manage viewer comments.</li>
+				<li>Custom template editor.</li>
+				<li>LinkedIn recommendations for individual works.</li>
+                <li>View visitor metrics.</li>
+                <li>2.0 GB storage.</li>
+            </ul>
+    		<a href="#" class="offer2cta">Sign up for Premium</a>
+         </div>
+<br clear="all" />
+</div>
+<div class="footer">&copy;2010 FolioConnect.com</div>
+
+
+
+
+</body>
+</html>

@@ -10,6 +10,8 @@
       </ul>
     </div>
   <% end %>
+  <%= f.hidden_field :premium %>
+  <%= f.hidden_field :price %>
 
   <div class="field">
     <%= f.label :email %><br />
@@ -17,7 +19,11 @@
   </div>
   <div class="field">
     <%= f.label :password %><br />
-    <%= f.text_field :password %>
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label "Repeat password" %><br />
+    <%= f.password_field :password %>
   </div>
   <div class="field">
     <%= f.label :first_name %><br />
@@ -28,11 +34,7 @@
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
-    <%= f.label :full_name %><br />
-    <%= f.text_field :full_name %>
-  </div>
-  <div class="field">
-    <%= f.label :folio_name %><br />
+    <%= f.label "Site Name" %><br />
     <%= f.text_field :folio_name %>
   </div>
   <div class="field">

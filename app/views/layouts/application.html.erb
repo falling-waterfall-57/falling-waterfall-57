@@ -1,14 +1,26 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-  <title>Modalware</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>FolioConnect. Target your portfolio.</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <div class="main">
+  	<%= link_to image_tag("/images/icon_facebook.png", :size =>"40x40", :class =>"right", :alt => "Become a fan", :title=>"Become a fan."), "#" %>
+    <%= link_to image_tag("/images/icon_twitter.png", :size =>"40x40", :class =>"right", :alt => "Follow us on twitter.", :title => "Follow us on twitter.") ,"#" %>
+    <%= link_to image_tag("/images/folioconnect.gif", :size =>"267x99", :alt=>"FolioConnect", :title=>'FolioConnect'), root_path%>  
+    <br />
+      <img src="/images/targetyourportfolio.gif" height="30" width="267" alt="target your portfolio." />
+      <div class="nav">
+      	<a href="#" class="navTab">About Us</a>
+      </div>
 
 <%= yield %>
+<br clear="all" />
 
-</body>
+</div>
+<div class="footer">&copy;2010 FolioConnect.com</div></body>
 </html>
