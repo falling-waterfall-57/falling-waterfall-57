@@ -1,5 +1,4 @@
-<% prices = [7, 11, 13, 17, 19, 23]
-   price = prices[rand(6-1).to_i]
+<% 
 %>
 
     <h2>Manage custom views of your online portfolio... <strong>all in one place</strong>.</h2>
@@ -19,7 +18,7 @@
             <%= link_to "Sign up for Basic", new_user_path, :class => 'offer1cta' %>
          </div>
          <div class="offer2">
-        	<h3>Premium Folio - $<%=price%> / Month</h3>
+        	<h3>Premium Folio - $<%=@price%> / Month</h3>
             <ul>
 				<li>10 Custom Views, change anytime.</li>
 				<li>Manage viewer comments.</li>
@@ -28,5 +27,5 @@
                 <li>View visitor metrics.</li>
                 <li>2.0 GB storage.</li>
             </ul>
-    		<%= link_to "Sign up for Premium", new_user_path(:premium_user => 1, :price => price), :class=>"offer2cta" %>
+    		<%= link_to "Sign up for Premium", new_user_path(:premium_user => 1, :price => @price), :class=>"offer2cta" %>
          </div>
