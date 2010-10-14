@@ -5,7 +5,7 @@ p {clear:both;}
 a {color:#336699;}
 a:hover {text-decoration:none;}
 
-.features {margin:0px auto 20px auto;padding:1px 0px 0px 42px;height:102px;width:400px;background:top left repeat-y url(check.gif);font-size:16px;line-height:18px;}
+.features {margin:0px auto 20px auto;padding:1px 0px 0px 42px;height:102px;width:400px;background:top left repeat-y url(/images/check.gif);font-size:16px;line-height:18px;}
 
 .offer1 {float:left;margin:0px 20px 0px 50px;padding:0px;width:254px;background-color:#f2f4f8;}
 .offer1 h3 {margin:0px;padding:3px 12px;width:230px;background-color:#7193b6;color:#fff;font-weight:normal;}
