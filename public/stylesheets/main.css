@@ -12,7 +12,7 @@ a:hover {text-decoration:underline;}
 .pass {float:left;border: none;margin:0px;padding:2px 10px 2px 6px;font-size:12px;width:120px;color:#999;border:1px solid #474840;}
 .submit {float:left;margin:0px;padding:0px;border:1px solid #474840;}
 .logo {display:block;float:left;margin:0px;padding:3px 0px 4px 4px;height:33px;width:177px;}
-.signin {float:right;margin:16px 0px 0px 0px;padding:0px 0px 0px 176px;height:24px;width:350px;background:url(alreadyhave.png) no-repeat left;}
+.signin {float:right;margin:16px 0px 0px 0px;padding:0px 0px 0px 176px;height:24px;width:350px;background:url(/images/alreadyhave.png) no-repeat left;}
 
 .body {clear:both;margin:0px auto;width:100%;background-color:#dbddcf;text-align:center;}
 .main {margin:0px auto;padding:0px;width:904px;background-image:url(/images/bg_grid.png)}
@@ -29,6 +29,8 @@ a:hover {text-decoration:underline;}
 .cta {display:block;margin:0px;padding: 0px 0px 0px 100px;}
 .note {margin:0px;padding:40px 0px 0px 100px;color:#86877f;font-size:11px;}
 .flashdemo {float:left;margin:0px 12px 12px 20px;padding:0px;height:360px;width:500px;}
+.thankyou {margin:20px;padding:0px 0px 20px 30px;width:640px;text-align:left;font-size:18px;line-height:24px;color:#474840;}
+.emailsubmit {font-size:18px;font-weight:bold;}
 
 .footer {clear:both;margin:10px auto;width:904px;color:#b6b8aa;}
 .footerLeft {float:left;margin:0px auto;padding:0px;text-align:right;width:140px;height:14px;font-weight:normal;}

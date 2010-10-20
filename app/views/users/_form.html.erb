@@ -14,18 +14,8 @@
   <%= f.hidden_field :price %>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email %>
     <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label "Repeat password" %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Signup for Beta", :class => 'emailsubmit'%>
   </div>
 <% end %>
