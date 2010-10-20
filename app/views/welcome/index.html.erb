@@ -1,31 +1,36 @@
-<% 
-%>
-
-    <h2>Manage custom views of your online portfolio... <strong>all in one place</strong>.</h2>
-    	<div class="features">
-        	<p>Quick setup, Import data from LinkedIn.</p>
-			<p>Upload audio, video, images, code and <a href="#">other file types</a>.</p>
-			<p>Gorgeous presentation templates.</p>
+<div class="body">
+	<div class="main">
+    	<div class="top">
+        	<ul class="nav">
+            	<li><a href="#">home</a></li>
+            	<li><a href="#">pricing</a></li>
+            	<li><a href="#">about us</a></li>
+            	<li><a href="#">privacy policy</a></li>
+            	<li class="minilogo"><a href="#"><img src="/images/logo_fb.png" height="20" width="20" title="Friend us on Facebook." /></a></li>
+            	<li class="minilogo"><a href="#"><img src="/images/logo_tw.png" height="20" width="20" title="Follow us on Twitter." /></a></li>
+            </ul>
+            <img class="title" src="/images/title.png" height="36" width="700" alt="Create your professional image with a branchpage." />
         </div>
-        <a class="cta" href="#">Watch the DEMO!</a>
-    	<div class="offer1">
-        	<h3>Basic Folio - FREE!</h3>
-            <ul>
-				<li>1 Custom View, change anytime.</li>
-				<li>Manage viewer comments.</li>
-                <li>100 MB storage.</li>
-            </ul>
-            <%= link_to "Sign up for Basic", new_user_path, :class => 'offer1cta' %>
-         </div>
-         <div class="offer2">
-        	<h3>Premium Folio - $<%=@price%> / Month</h3>
-            <ul>
-				<li>10 Custom Views, change anytime.</li>
-				<li>Manage viewer comments.</li>
-				<li>Custom template editor.</li>
-				<li>LinkedIn recommendations for individual works.</li>
-                <li>View visitor metrics.</li>
-                <li>2.0 GB storage.</li>
-            </ul>
-    		<%= link_to "Sign up for Premium", new_user_path(:premium_user => 1, :price => @price), :class=>"offer2cta" %>
-         </div>
+        <div class="left">
+        	<div class="intro">
+        		<img src="/images/zerotopublish.png" height="18" width="305" alt="Zero to publish in 5 minutes or less." />
+                <p>Today’s hiring managers expect professional sites with targeted work samples. Create a <strong>branchpage</strong> for fast and flexible web presence management. &nbsp; <a href="#">Learn More &raquo;</a></p>
+        	</div>
+            <div class="mascot">
+            	<img src="/images/mascot.png" height="145" width="324" />
+                <%= link_to image_tag("getstartednow.png", :size => "184x38", :alt =>"Get started now.", :title =>"Get started now."), new_user_path%>
+                <div class="note">* Free 30-day trial begins upon sign up.</div>
+            </div>
+        </div>
+        <div class="flashdemo">
+        
+        
+        
+        	<!-- Insert Flash demo here -->
+        
+        
+        
+        </div>
+       <br clear="all" />
+    </div>
+</div>
