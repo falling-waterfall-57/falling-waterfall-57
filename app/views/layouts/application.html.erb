@@ -5,18 +5,50 @@
   <title>branchpage</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "jquery.min.js"%>
   <%= csrf_meta_tag %>
+  <script>
+  
+    $(document).ready( function () { $(':password').hide(); });
+    
+    function clear_label (obj, default_val) {
+      if ($(obj).val() == default_val) {
+        $(obj).val("");
+      }
+    }
+    
+    function restore_label (obj, default_val) {
+      if ($(obj).val() == "") {
+        $(obj).val(default_val);
+      }
+    }
+    
+    function switch_pass (obj) {
+      if ($(obj).attr('type') == 'text') {
+        $(obj).hide();
+        $(':password').addClass('pass')
+        $(':password').show();
+        $(':password').focus();
+      } else if ($(obj).val() == "") {
+        $(':password').hide();
+        $(':password').removeClass('pass')
+        $('.pass').show();
+      }
+    }
+     
+  </script>
 </head>
 <body>
   <div class="header">
        <div class="signin">
-       <form>
-        	<input class="email" type="text" value="Email" />
-        	<input class="pass" type="text" value="Password" />
+      <% form_for User.new, :url => { :action => "login" } do |u| %>
+         <%= u.text_field :email, :class =>'email', :value=>'Email', :onclick=>"javascript:clear_label(this, 'Email');", :onblur => "javascript:restore_label(this, 'Email')" %>
+         <%= u.text_field :password, :class =>'pass', :value=>'Password', :onclick => "javascript:switch_pass(this);"%>
+         <%= u.password_field :password, :onblur => "javascript:switch_pass(this);"%>
         	<input class="submit" name="commit" type="image" src="/images/signin.png" />
-       </form>
+      <% end %>
        </div>
-  	<a class="logo" href="#"><img src="/images/logo.png" height="33" width="177" /></a>
+  	<%= link_to image_tag("logo.png", :size => "177x33"), root_path, :class => 'logo' %>
   </div>
 
 <%= yield %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101012033011) do
+ActiveRecord::Schema.define(:version => 20101021181839) do
 
   create_table "comments", :force => true do |t|
     t.integer  "media_id"
@@ -92,7 +92,7 @@ ActiveRecord::Schema.define(:version => 20101012033011) do
     t.string   "full_name"
     t.string   "folio_name"
     t.text     "about_me"
-    t.boolean  "premium"
+    t.integer  "premium"
     t.integer  "price"
     t.datetime "created_at"
     t.datetime "updated_at"

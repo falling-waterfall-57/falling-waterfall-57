@@ -1,0 +1,89 @@
+<div class="body">
+	<div class="main">
+    	<div class="top">
+        	<ul class="nav">
+            	<li><%= link_to "home", root_path %></li>
+            	<li><%= link_to "pricing", :action => 'start_now'%></li>
+            	<li><a href="#">about us</a></li>
+            	<li><a href="#">contact us</a></li>
+            	<li class="minilogo"><%= image_tag("logo_fb.png", :size=>"20x20", :title=>"Friend us on Facebook.")%></a></li>
+            	<li class="minilogo"><a href="#"><%= image_tag("logo_tw.png", :size=>"20x20", :title=>"Follow us on Twitter.")%></a></li>
+            </ul>
+            <table class="pricing" cellpadding="0" cellspacing="0" border="0">
+            	<thead>
+                	<tr>
+                    	<th class="features"><strong>Features</strong> - Click for description</th>
+                    	<th class="highlight1"><strong>Leaf<br /></strong>$5/month</th>
+                    	<th class="highlight2"><strong>Branch<br /></strong>$11/month</th>
+                    	<th class="highlight3"><strong>Trunk<br /></strong>$19/month</th>
+                    </tr>
+                </thead>
+                <tbody>
+            		<tr>
+                    	<td class="featFirst top"><a href="#">Import from LinkedIn</a></td>
+                    	<td class="top"><%= image_tag "check2.png", :size => "24x23" %></td>
+                    	<td class="top"><%= image_tag "check2.png", :size => "24x23" %></td>
+                    	<td class="top last"><%= image_tag "check2.png", :size => "24x23" %></td>
+                    </tr>
+            		<tr>
+                    	<td class="feat"><a href="#">Ad free</a></td>
+                    	<td><%= image_tag "check2.png", :size => "24x23" %></td>
+                    	<td><%= image_tag "check2.png", :size => "24x23" %></td>
+                    	<td class="last"><%= image_tag "check2.png", :size => "24x23" %></td>
+                    </tr>
+            		<tr>
+                    	<td class="feat"><a href="#">All media support</a></td>
+                    	<td><%= image_tag "check2.png", :size => "24x23" %></td>
+                    	<td><%= image_tag "check2.png", :size => "24x23" %></td>
+                    	<td class="last"><%= image_tag "check2.png", :size => "24x23" %></td>
+                    </tr>
+            		<tr>
+                    	<td class="feat"><a href="#">Storage</td>
+                    	<td>250 MB</td>
+                    	<td>500 MB</td>
+                    	<td class="last">2 GB</td>
+                    </tr>
+            		<tr>
+                    	<td class="feat"><a href="#"># of configurable instances (URLs)</a></td>
+                    	<td>2</td>
+                    	<td>10</td>
+                    	<td class="last">Unlimited</td>
+                    </tr>
+            		<tr>
+                    	<td class="feat"><a href="#">Password protection</a></td>
+                    	<td>&nbsp;</td>
+                    	<td><%= image_tag "check2.png", :size => "24x23" %></td>
+                    	<td class="last"><%= image_tag "check2.png", :size => "24x23" %></td>
+                    </tr>
+            		<tr>
+                    	<td class="feat"><a href="#">Metrics</a></td>
+                    	<td>&nbsp;</td>
+                    	<td><%= image_tag "check2.png", :size => "24x23" %></td>
+                    	<td class="last"><%= image_tag "check2.png", :size => "24x23" %></td>
+                    </tr>
+            		<tr>
+                    	<td class="feat"><a href="#">Email customer support</a></td>
+                    	<td>&nbsp;</td>
+                    	<td><%= image_tag "check2.png", :size => "24x23" %></td>
+                    	<td class="last"><%= image_tag "check2.png", :size => "24x23" %></td>
+                    </tr>
+            		<tr>
+                    	<td class="featLast bottom"><a href="#">Additional storage</a></td>
+                    	<td class="bottom">&nbsp;</td>
+                    	<td class="bottom">&nbsp;</td>
+                    	<td class="bottom last">+$5/month per 1 GB</td>
+                    </tr>
+                	<tr>
+                    	<td class="features2">&nbsp;</td>
+                    	<td class="highlight1"><%= link_to image_tag("signup.png", :size => "84x27"), new_user_path(:premium => 0, :price => 5)%>/></a></td>
+                    	<td class="highlight2"><%= link_to image_tag("signup.png", :size => "84x27"), new_user_path(:premium => 1, :price => 11)%>/></a></td>
+                    	<td class="highlight3"><%= link_to image_tag("signup.png", :size => "84x27"), new_user_path(:premium => 2, :price => 15)%>/></a></td>
+                    </tr>
+ 				</tbody>
+ 			</table>
+                <div class="note2">* Free 30-day trial begins upon sign up.</div>
+            
+        </div>
+       <br clear="all" />
+    </div>
+</div>

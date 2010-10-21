@@ -71,6 +71,7 @@ Modalware::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => "welcome#index"
+  match 'welcome/:action' => 'welcome#action'
 
   # See how all your routes lay out with "rake routes"
 

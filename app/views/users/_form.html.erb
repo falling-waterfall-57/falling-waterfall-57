@@ -14,8 +14,6 @@
   <%= f.hidden_field :price %>
 
   <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-    <%= f.submit "Signup for Beta", :class => 'emailsubmit'%>
+    <%= f.text_field :email, :class =>"waitList", :value => "Email", :onclick=>"javascript:clear_label(this, 'Email')", :onblur=>"javascript:restore_label(this, 'Email')"%>
   </div>
 <% end %>
