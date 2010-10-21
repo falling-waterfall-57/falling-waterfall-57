@@ -41,7 +41,7 @@
 <body>
   <div class="header">
        <div class="signin">
-      <% form_for User.new, :url => { :action => "login" } do |u| %>
+      <% form_for User.new, :url => { :controller => 'welcome', :action => "login" } do |u| %>
          <%= u.text_field :email, :class =>'email', :value=>'Email', :onclick=>"javascript:clear_label(this, 'Email');", :onblur => "javascript:restore_label(this, 'Email')" %>
          <%= u.text_field :password, :class =>'pass', :value=>'Password', :onclick => "javascript:switch_pass(this);"%>
          <%= u.password_field :password, :onblur => "javascript:switch_pass(this);"%>
