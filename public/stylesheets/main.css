@@ -44,32 +44,32 @@ a:hover {text-decoration:underline;}
 .footer a:hover {text-decoration:none;}
 
 .pricing {clear:both;margin:20px auto;padding:0px;border:0px;}
-.pricing td, .pricing th {margin:0px;padding:8px 12px;height:42px;width:120px;border-top:1px solid #ccc;border-right:1px solid #ccc;text-align:center;background-color:#fff;}
+.pricing td, .pricing th {margin:0px;padding:4px 8px;height:24px;width:120px;border-top:1px solid #ccc;border-right:1px solid #ccc;text-align:center;background-color:#fff;}
 .pricing .top {border-top:1px solid #444;background-image:none;}
 .pricing .bottom {border-bottom:1px solid #444;background-image:none;}
 .pricing .last {border-right:1px solid #444;background-image:none;}
 .pricing th {border-top:none;}
-.pricing td.feat {padding:0px;text-align:left;font-size:14px;width:250px;border-left:1px solid #444;border-right:1px solid #ccc;}
-.pricing td.featFirst {padding:0px;text-align:left;font-size:14px;border-top:1px solid #444;border-left:1px solid #444;border-right:1px solid #ccc;border-radius:20px 0px 0px 0px;-webkit-border-radius:20px 0px 0px 0px;-moz-border-radius:20px 0px 0px 0px;}
-.pricing td.featLast {padding:0px;text-align:left;font-size:14px;border-bottom:1px solid #444;border-left:1px solid #444;border-right:1px solid #ccc;border-radius:0px 0px 0px 20px;-webkit-border-radius:0px 0px 0px 20px;-moz-border-radius:0px 0px 0px 20px;}
-.pricing th.feat {padding-left:30px;text-align:left;font-size:14px;border-left:none;}
+.pricing td.feat {padding:0px;text-align:left;font-size:13px;width:250px;border-left:1px solid #444;border-right:1px solid #ccc;}
+.pricing td.featFirst {padding:0px;text-align:left;font-size:13px;border-top:1px solid #444;border-left:1px solid #444;border-right:1px solid #ccc;border-radius:20px 0px 0px 0px;-webkit-border-radius:20px 0px 0px 0px;-moz-border-radius:20px 0px 0px 0px;}
+.pricing td.featLast {padding:0px;text-align:left;font-size:13px;border-bottom:1px solid #444;border-left:1px solid #444;border-right:1px solid #ccc;border-radius:0px 0px 0px 20px;-webkit-border-radius:0px 0px 0px 20px;-moz-border-radius:0px 0px 0px 20px;}
+.pricing th.feat {padding-left:30px;text-align:left;font-size:13px;border-left:none;}
 .pricing th.features {text-align:left;height:auto;padding:20px 0px 6px 20px;font-weight:normal;border:none;background:none;}
 .pricing td.features2 {text-align:left;height:auto;font-weight:normal;border:none;background:none;}
 .pricing td.empty, .pricing th.empty {border:none;background:none;}
 .pricing th.highlight1 {background-color:#d3de9f;font-size:16px;font-weight:normal;border:none;border-radius:20px 20px 0px 0px;-webkit-border-radius:20px 20px 0px 0px;-moz-border-radius:20px 20px 0px 0px;}
 .pricing th.highlight2 {background-color:#eceed9;font-size:16px;font-weight:normal;border:none;border-radius:20px 20px 0px 0px;-webkit-border-radius:20px 20px 0px 0px;-moz-border-radius:20px 20px 0px 0px;}
 .pricing th.highlight3 {background-color:#f8f7bf;font-size:16px;font-weight:normal;border:none;border-radius:20px 20px 0px 0px;-webkit-border-radius:20px 20px 0px 0px;-moz-border-radius:20px 20px 0px 0px;}
-.pricing td.highlight1 {background-color:#d3de9f;border-top:none;border-left:none;border-right:none;border-radius:0px 0px 20px 20px;-webkit-border-radius:0px 0px 20px 20px;-moz-border-radius:0px 0px 20px 20px}
-.pricing td.highlight2 {background-color:#eceed9;border-top:none;border-left:none;border-right:none;border-radius:0px 0px 20px 20px;-webkit-border-radius:0px 0px 20px 20px;-moz-border-radius:0px 0px 20px 20px}
-.pricing td.highlight3 {background-color:#f8f7bf;border-top:none;border-left:none;border-right:none;border-radius:0px 0px 20px 20px;-webkit-border-radius:0px 0px 20px 20px;-moz-border-radius:0px 0px 20px 20px}
+.pricing td.highlight1 {padding:10px 4px;background-color:#d3de9f;border-top:none;border-left:none;border-right:none;border-radius:0px 0px 20px 20px;-webkit-border-radius:0px 0px 20px 20px;-moz-border-radius:0px 0px 20px 20px}
+.pricing td.highlight2 {padding:10px 4px;background-color:#eceed9;border-top:none;border-left:none;border-right:none;border-radius:0px 0px 20px 20px;-webkit-border-radius:0px 0px 20px 20px;-moz-border-radius:0px 0px 20px 20px}
+.pricing td.highlight3 {padding:10px 4px;background-color:#f8f7bf;border-top:none;border-left:none;border-right:none;border-radius:0px 0px 20px 20px;-webkit-border-radius:0px 0px 20px 20px;-moz-border-radius:0px 0px 20px 20px}
 .pricing a {color:#336699;}
 
-.pricing .feat a:link, .pricing .feat a:visited {display:block;margin:0px;padding:13px 0px 13px 20px;color:#336699;text-align:left;font-weight:normal;}
-.pricing .feat a:hover {background-color:#f9f9f9;}
+.pricing .feat a:link, .pricing .feat a:visited {display:block;margin:0px;padding:8px 0px 8px 20px;color:#336699;text-align:left;font-weight:normal;}
+.pricing .feat a:hover {background-color:#f3f3f3;}
 
-.pricing .featFirst a:link, .pricing .featFirst a:visited {display:block;margin:0px;padding:13px 0px 13px 20px;color:#336699;text-align:left;font-weight:normal;border-radius:20px 0px 0px 0px;-webkit-border-radius:20px 0px 0px 0px;-moz-border-radius:20px 0px 0px 0px;}
-.pricing .featFirst a:hover {background-color:#f9f9f9;}
+.pricing .featFirst a:link, .pricing .featFirst a:visited {display:block;margin:0px;padding:8px 0px 8px 20px;color:#336699;text-align:left;font-weight:normal;border-radius:20px 0px 0px 0px;-webkit-border-radius:20px 0px 0px 0px;-moz-border-radius:20px 0px 0px 0px;}
+.pricing .featFirst a:hover {background-color:#f3f3f3;}
 
-.pricing .featLast a:link, .pricing .featLast a:visited {display:block;margin:0px;padding:13px 0px 13px 20px;color:#336699;text-align:left;font-weight:normal;border-radius:0px 0px 0px 20px;-webkit-border-radius:0px 0px 0px 20px;-moz-border-radius:0px 0px 0px 20px;}
-.pricing .featLast a:hover {background-color:#f9f9f9;}
+.pricing .featLast a:link, .pricing .featLast a:visited {display:block;margin:0px;padding:8px 0px 8px 20px;color:#336699;text-align:left;font-weight:normal;border-radius:0px 0px 0px 20px;-webkit-border-radius:0px 0px 0px 20px;-moz-border-radius:0px 0px 0px 20px;}
+.pricing .featLast a:hover {background-color:#f3f3f3;}
 
