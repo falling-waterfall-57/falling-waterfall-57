@@ -3,7 +3,6 @@
     	<div class="top">
         	<ul class="nav">
             	<li><%= link_to "home", root_path %></li>
-            	<li><%= link_to "pricing", :action => 'start_now'%></li>
             	<li><a href="#">about us</a></li>
             	<li class="minilogo"><a href="#"><%= image_tag("logo_fb.png", :size=>"20x20", :title=>"Friend us on Facebook.")%></a></li>
             	<li class="minilogo"><a href="#"><%= image_tag("logo_tw.png", :size=>"20x20", :title=>"Follow us on Twitter.")%></a></li>
@@ -17,7 +16,7 @@
         	</div>
             <div class="mascot">
             	<img src="/images/mascot.png" height="145" width="324" />
-                <%= link_to image_tag("getstartednow.png", :size => "184x38", :alt =>"Get started now.", :title =>"Get started now."), :action => 'start_now'%>
+                <%= link_to image_tag("getstartednow.png", :size => "184x38", :alt =>"Get started now.", :title =>"Get started now."), new_user_path %>
                 <div class="note">* Free 30-day trial begins upon sign up.</div>
             </div>
         </div>
