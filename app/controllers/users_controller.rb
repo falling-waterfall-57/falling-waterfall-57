@@ -89,5 +89,14 @@ class UsersController < ApplicationController
       end
     end
   end
+  
+  def import_from_linked_in
+    l = Linker.new
+    if session[:li_token]
+      l.client.authorize_from_access(session[:li_token], session[:li_secret])
+    else
+      redirect_to :controller => 'oauth_callback', :action => 'start_li_call'
+    end
+  end
 
 end
