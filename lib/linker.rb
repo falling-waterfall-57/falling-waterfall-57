@@ -30,6 +30,12 @@ class Linker
   def connection_ids
     @client.connections.map {|c| c.id}
   end
+  
+  def Linker.authenticate_from_keys(token, secret)
+    client = LinkedIn::Client.new(APIKEY, SECRET)
+    client.authorize_from_access(token, secret)
+    client
+  end
     
   
 end

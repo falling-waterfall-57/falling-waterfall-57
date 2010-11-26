@@ -80,4 +80,46 @@ class JobsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def initiate_synch_with_linkedin
+    client = Linker.authenticate_from_keys(session[:li_token], session[:li_secret])
+    response = Hash.new
+    if client
+      li_job_ids = client.profile(:fields => ['positions']).positions.map { |job| job.id }
+      fc_job_ids = Jobs.all.map { |job| job.id unless job.id.nil? }
+      session[:new_li_jobs] = li_job_ids - fc_job_ids
+      session[:new_fc_jobs] = fc_job_ids - li_job_ids
+      session[:synch_jobs]  = fc_job_ids & li_job_ids
+      response[:import] = session[:new_li_jobs].size
+      response[:export] = session[:new_fc_jobs].size
+      response[:synch] = session[:synch_jobs].size
+    else
+      message = "We are experiencing difficulties connecting to LinkedIn. Please try again later."
+    end
+    respond_to do |format|
+      format.json {render :json => response}
+    end
+  end
+  
+  def complete_synch_with_linkedin
+    client = Linker.authenticate_from_keys(session[:li_token], session[:li_secret])
+    if client
+      li_jobs = client.profile(:fields => ['positions']).positions
+      fc_jobs = Jobs.all
+    
+      add_li_jobs_to_fc
+      add_fc_jobs_to_li
+      synch_li_fc_jobs
+  end
+  
+private
+  
+  def  add_li_jobs_to_fc
+  end
+  
+  def add_fc_jobs_to_li
+  end
+  
+  def synch_li_fc_jobs
+  end
 end

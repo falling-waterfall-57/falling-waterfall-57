@@ -15,7 +15,7 @@ class OauthCallback < ApplicationController
     else
       #This is very, very bad
     end
-    redirect_to :controller => :users, :action => 'synch_with_linkedin'
+    redirect_to :controller => :jobs, :action => 'initiate_synch_with_linkedin'
   end
   
   def start_li_call
